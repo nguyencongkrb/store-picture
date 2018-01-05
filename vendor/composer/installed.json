@@ -1,0 +1,140 @@
+[
+    {
+        "name": "leafo/scssphp",
+        "version": "v0.0.12",
+        "version_normalized": "0.0.12.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/leafo/scssphp.git",
+            "reference": "ff76df3e45af45e808f3fcd516a2cb5cbc77f45e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/leafo/scssphp/zipball/ff76df3e45af45e808f3fcd516a2cb5cbc77f45e",
+            "reference": "ff76df3e45af45e808f3fcd516a2cb5cbc77f45e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "require-dev": {
+            "php": ">=5.3.0",
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2014-07-07T01:51:39+00:00",
+        "bin": [
+            "pscss"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "scss.inc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT",
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Leaf Corcoran",
+                "email": "leafot@gmail.com",
+                "homepage": "http://leafo.net"
+            }
+        ],
+        "description": "scssphp is a compiler for SCSS written in PHP.",
+        "homepage": "http://leafo.net/scssphp/"
+    },
+    {
+        "name": "cosenary/instagram",
+        "version": "v2.3",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cosenary/Instagram-PHP-API.git",
+            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cosenary/Instagram-PHP-API/zipball/fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.2.0"
+        },
+        "time": "2014-11-29T13:10:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MetzWeb\\Instagram\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Christian Metz",
+                "email": "christian-metz1@gmx.net",
+                "homepage": "http://metzweb.net"
+            }
+        ],
+        "description": "An easy-to-use PHP Class for accessing Instagram's API.",
+        "homepage": "https://github.com/cosenary/Instagram-PHP-API",
+        "keywords": [
+            "api",
+            "instagram"
+        ]
+    },
+    {
+        "name": "andreyco/instagram",
+        "version": "4.0.0",
+        "version_normalized": "4.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Andreyco/Instagram-for-PHP.git",
+            "reference": "49b545a964686e8da53499d49886ace5e9556e49"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Andreyco/Instagram-for-PHP/zipball/49b545a964686e8da53499d49886ace5e9556e49",
+            "reference": "49b545a964686e8da53499d49886ace5e9556e49",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2017-07-04T17:51:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Andreyco\\Instagram\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-4-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Andrej Badin",
+                "email": "contact@andrejbadin.com",
+                "homepage": "http://andrejbadin.com"
+            }
+        ],
+        "description": "An easy-to-use PHP Class for accessing Instagram's API.",
+        "homepage": "https://github.com/Andreyco/Instagram-for-PHP",
+        "keywords": [
+            "api",
+            "instagram"
+        ]
+    }
+]

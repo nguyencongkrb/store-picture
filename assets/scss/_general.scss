@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+@keyframes sp_loading_animate {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+@-webkit-keyframes sp_loading_animate {
+  0% { -webkit-transform: rotate(0deg) }
+  100% { -webkit-transform: rotate(360deg) }
+}
+
+@import "sp-icon";
+
+body{
+  .nano {
+    > .nano-content{
+      padding: 20px;
+    }
+    > .nano-pane{
+      background: rgba(255,255,255,.1);
+      > .nano-slider{
+        background: rgba(255,255,255,.1);
+      }
+    }
+  }
+  .sp-text-center{
+    text-align: center;
+  }
+  .sp-loading-animate{
+    display: inline-block;
+    height: auto;
+    &:after{
+      content: "";
+      display: block;
+      width: 26px;
+      height: 26px;
+      border: solid 3px #444;
+      border-top-color: $color-1;
+      border-radius: 100%;
+
+      animation: sp_loading_animate 2s infinite linear;
+      -webkit-animation: sp_loading_animate 2s infinite linear;
+    }
+  }
+}
+
+%sp-fontfamily{
+  font-family: 'Poppins', sans-serif;
+  b{
+    font-weight: 700;
+  }
+}
+
+%sp-btn{
+  .sp-button-action{
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 10px;
+    letter-spacing: -.3px;
+    background: #999;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease;
+    font-weight: bold;
+    -webkit-transition: .3s ease;
+    &:hover{
+      background: #888;
+    }
+    &.btn-link,
+    &.btn-text{
+      color: $color-1;
+      background: transparent;
+      &:hover{
+        background: transparent;
+        color: #222;
+      }
+    }
+    &.btn-primary{
+      background: $color-1;
+      color: #FFF;
+      &:hover{
+        color: #222;
+        background: $color-2;
+      }
+    }
+  }
+}
+
+%custom-uikit{
+  .uk-button{
+    &.uk-button-sp{
+      border-radius: 1px;
+      color: #fff;
+      border: none;
+      transition: .3s ease;
+      -webkit-transition: .3s ease;
+      background: $color-1;
+      &:hover{
+        // color: #fff;
+        background: #333;
+        border: none;
+      }
+    }
+  }
+  .sp-custom-fieldset{
+    border: solid 2px #222;
+    padding: 20px;
+    .uk-legend{
+      font-size: 1.15rem;
+      width: auto;
+      line-height: 1.4;
+      padding: 0 20px;
+      letter-spacing: -0.4px;
+    }
+  }
+  .sp-custom-switcher{
+    position: relative;
+    > li{
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      &.uk-active{
+        visibility: visible;
+        opacity: 1;
+        position: static;
+      }
+      .uk-switcher-container{
+        margin-top: 45px;
+      }
+    }
+  }
+  .uk-tab{
+    li{
+      margin-bottom: 0;
+      &.uk-disabled{
+        a{
+          opacity: .4;
+        }
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: none;
+        outline: none;
+        position: relative;
+        .sp-badge{
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateY(-80%) translateX(50%);
+          -webkit-transform: translateY(-80%) translateX(50%);
+          font-weight: normal;
+          font-size: 10px;
+          background: red;
+          color: #fff;
+          padding: 1px 6px;
+          line-height: normal;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}

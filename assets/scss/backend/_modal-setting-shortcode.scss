@@ -1,0 +1,104 @@
+body .store-picture-modal-setting-shortcode{
+  .sp-modal-container{
+    border-radius: 3px;
+    margin: 20vh auto;
+    .sp-modal-body{
+      .store-picture-shortcode-setting-wrap{
+        font-family: 'Poppins', sans-serif;
+        padding: 20px;
+        color: #FFF;
+        font-weight: bold;
+        select{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: url('../../images/arrow-down.png') no-repeat !important;
+          background-size: 15px !important;
+          background-position: calc(100% - 8px) 50% !important;
+          padding-right: 15px !important;
+          cursor: pointer;
+
+          display: block;
+          // width: 100%;
+          box-sizing: border-box;
+          background: transparent;
+          padding: 8px;
+          border-width: 1px !important;
+          border: solid $color-1;
+
+          box-shadow: none;
+          height: auto;
+          line-height: normal;
+
+          transition: .3s ease;
+          -webkit-transition: .3s ease;
+          &:active,
+          &:focus,
+          &:hover{
+            border-color: $color-2;
+          }
+          option:disabled{
+            opacity: .5 !important;
+          }
+        }
+        .sp-field-wrap{
+          margin-bottom: 30px;
+          label{
+            // font-size: 11px;
+            // text-transform: uppercase;
+            margin-bottom: 4px;
+            display: block;
+          }
+        }
+        .modal-title{
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: -0.8px;
+          margin: 0 0 30px;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        select#picture-store,
+        select#picture-store-layout{
+          width: 100%;
+          color: #999;
+          &:active,
+          &:focus,
+          &:hover{
+            color: #FFF;
+          }
+        }
+
+        .btn-action{
+          padding-top: 18px;
+          border-top: solid 2px rgba(255,255,255,.1);
+          text-align: right;
+          .btn{
+            cursor: pointer;
+            font-size: 13px;
+            line-height: 18px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 6px 14px;
+            color: #fff;
+            background: #e3e3e3;
+            border: none;
+            border-radius: 2px;
+            transition: .3s ease;
+            -webkit-transition: .3s ease;
+            &.btn-text{
+              background: transparent;
+            }
+            &.btn-primary{
+              background: $color-1;
+              &:hover{
+                background: $color-2;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+body, html{
+  .sp-icon{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-position: center center !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    &.i-like{
+      background: url('../../icons/svg/like.svg');
+    }
+    &.i-chat{
+      background: url('../../icons/svg/chat.svg');
+    }
+    &.i-eye-in-a-circle{
+      background: url('../../icons/svg/eye-in-a-circle.svg');
+    }
+    &.i-visibility{
+      background: url('../../icons/svg/visibility.svg');
+    }
+    &.i-instagram{
+      background: url('../../icons/svg/instagram.svg');
+    }
+    &.i-next{
+      background: url('../../icons/svg/next.svg');
+    }
+    &.i-back{
+      background: url('../../icons/svg/back.svg');
+    }
+  }
+}

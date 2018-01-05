@@ -1,0 +1,23 @@
+$grid-columns: 12;
+$gap-columns: 30px;
+
+.sp-grid{
+  display: block;
+  width: 100%;
+  .sp-row{
+    margin-left: $gap-columns * -1;
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    @for $i from 1 to $grid-columns + 1 {
+      .sp-col-#{$i} {
+        width: calc(100% / 12 * #{$i} - #{$gap-columns});
+        margin-left: #{$gap-columns};
+        float: left;
+      }
+    }
+  }
+}

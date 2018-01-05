@@ -1,0 +1,59 @@
+.sp-small-confirm-wrap{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  &:after{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    border: solid 8px transparent;
+  }
+
+  /* bottom - center */
+  &.pos-bottom-center{
+    &:after{
+      border-bottom-color: #222;
+    }
+    .sp-small-confirm-inner{
+      top: 8px;
+      left: calc((180px / 2) * -1);
+    }
+  }
+  /* bottom - left */
+  &.pos-bottom-left{}
+  /* bottom - right */
+  &.pos-bottom-right{}
+
+  &.is-open{
+    visibility: visible;
+    opacity: 1;
+  }
+  .sp-small-confirm-inner{
+    @extend %sp-fontfamily;
+    position: absolute;
+    background: #222;
+    border-radius: 2px;
+    width: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #999;
+    .message{
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: -.6px;
+    }
+    .btn-action{
+      text-align: right;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: solid 0.5px rgba(255, 255, 255, .1);
+      .btn-cancel{
+        &:hover{
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "require": {
+    "leafo/scssphp": "0.0.12",
+    "andreyco/instagram": "^4.0"
+  }
+}

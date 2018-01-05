@@ -1,0 +1,10 @@
+.sp-shortcode{
+  &.store-picture-wrap{
+    @extend %sp-fontfamily;
+    display: block;
+    width: 100%;
+  }
+}
+body{
+  @extend %sp-btn;
+}

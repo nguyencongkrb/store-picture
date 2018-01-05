@@ -1,0 +1,91 @@
+/* fix icon menu on dashboard admin */
+#adminmenu {
+  #menu-posts-store-picture {
+    > a {
+      .wp-menu-image {
+        img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+#insert-picture-store{
+  @extend %sp-fontfamily;
+
+  background: $color-1;
+  color: #FFF;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 13px;
+
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  &:hover{
+    background: $color-2;
+    color: #111;
+  }
+}
+
+body{
+  @extend %sp-btn;
+  .sp-banner-wrap{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    img{
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+  #store-picture-custom-metabox-wrap{
+    padding-top: 30px;
+  }
+  &.post-type-store-picture{
+    #wpbody-content{
+      .sp-icon-img{
+        height: 50px;
+        border-radius: 3px;
+        width: auto;
+      }
+      // font-family: 'Poppins', sans-serif;
+      @extend %sp-fontfamily;
+      @extend %custom-uikit;
+      .sp-tab-container{
+        padding-top: 20px;
+      }
+      .grid-preview{
+        margin-top: 40px;
+      }
+      .sp-field-wrap{
+
+        .sp-field-label{
+          display: block;
+          .sp-field-val{
+            float: right;
+          }
+        }
+      }
+      .sp-tools{
+        padding: 0 0 20px;
+        .btn-tool-item{
+          margin-right: 20px;
+        }
+      }
+      .sp-table-list{
+        p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
