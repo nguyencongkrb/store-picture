@@ -35,6 +35,8 @@ var vueInstagramMediaModal = {
       }
     },
     instagramContentTags() {
+      if(! this.itemSelected.caption ) return '';
+
       var tags = (this.itemSelected.tags) ? this.itemSelected.tags : [],
           mapObj = {};
 
@@ -93,7 +95,7 @@ var vueInstagramMedia = {
           <div class="uk-width-1-2@s uk-width-1-5@m" v-for="(item, index) in data">
             <div :class="itemClassControl(item)" @click="selectItemHandle(item)">
               <div class="media-wrap">
-                <img :src="item.images.standard_resolution.url" :alt="item.caption.text"/>
+                <img :src="item.images.standard_resolution.url" :alt="(item.caption) ? item.caption.text : '#'"/>
               </div>
               <div class="meta-icons">
                 <div class="icon-item"><span class="sp-icon i-like"></span> {{ item.likes.count }}</div>

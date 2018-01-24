@@ -46,3 +46,5 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
+
+composer.phar

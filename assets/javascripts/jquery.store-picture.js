@@ -131,7 +131,7 @@
 
               window.sp_request({
                 data: {action: 'sp_get_post_link', pid: self.postID},
-                success: function(link) {
+                success: function(link) { console.log(link);
                   if(link) self.postLink = link;
                 }
               })
