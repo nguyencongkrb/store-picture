@@ -1,3 +1,7 @@
+/* 1.0.3 */
+- Fix Instagram media modal
+- Fix Css Z-Index modal search product
+
 /* 1.0.2 */
 - Fix issue create post not work
 - Add product link for thumbnail

@@ -1,12 +1,9 @@
 <?php
-/**
- * @package Store Picture
- */
 /*
 Plugin Name: Store Picture App
 Plugin URI: http://spapp.sophierepo.com/
 Description: This plugin is a addon of WooCommerce. It allows you to turn Instagram followers into Customers. Make your Instagram feeds shoppable with this plugin today.
-Version: 1.0.2
+Version: 1.0.3
 Author: Huynh
 Author URI: https://sophierepo.com/
 License: GPLv2 or later
@@ -22,7 +19,7 @@ if(! class_exists('StorePicture')) :
   require __DIR__ . '/vendor/autoload.php';
 
   class StorePicture{
-    public $version = '1.0.1';
+    public $version = '1.0.3';
     public $debug = true;
     protected static $_instance = null;
 
