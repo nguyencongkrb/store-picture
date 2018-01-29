@@ -7,6 +7,23 @@
       outline: none;
     }
 
+    .el-color-custom-temp{
+      > * {
+        display: inline-block;
+        vertical-align: top;
+        width: auto;
+        &.el-input{
+          .el-input__inner{
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+            font-weight: bold;
+            color: #999;
+          }
+        }
+      }
+    }
+
     .sp-instagram-access-token-ui{
       display: block;
       position: relative;

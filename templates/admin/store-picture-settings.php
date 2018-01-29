@@ -21,10 +21,16 @@ use MetzWeb\Instagram\Instagram;
               <li class="general-settings-wrap">
                 <div class="uk-switcher-container">
                   <el-form-item label="<?php _e('Main Color', 'store-picture'); ?>">
-                    <el-color-picker v-model="form.main_color" show-alpha></el-color-picker>
+                    <div class="el-color-custom-temp">
+                      <el-color-picker v-model="form.main_color" show-alpha></el-color-picker>
+                      <el-input v-model="form.main_color"></el-input>
+                    </div>
                   </el-form-item>
                   <el-form-item label="<?php _e('Second Color', 'store-picture'); ?>">
-                    <el-color-picker v-model="form.second_color" show-alpha></el-color-picker>
+                    <div class="el-color-custom-temp">
+                      <el-color-picker v-model="form.second_color" show-alpha></el-color-picker>
+                      <el-input v-model="form.second_color"></el-input>
+                    </div>
                   </el-form-item>
                 </div>
               </li>
@@ -33,7 +39,7 @@ use MetzWeb\Instagram\Instagram;
                 <div class="uk-switcher-container">
 									<div v-if="! form.instagram_access_token.access_token">
 	                  <el-form-item label="<?php _e('Client ID', 'store-picture'); ?>">
-	                    <el-input v-model="form.instagram_client_id"></el-input>
+                      <el-input v-model="form.instagram_client_id"></el-input>
 	                  </el-form-item>
 	                  <el-form-item label="<?php _e('Client Secret', 'store-picture'); ?>">
 	                    <el-input v-model="form.instagram_client_secret"></el-input>
@@ -54,7 +60,7 @@ use MetzWeb\Instagram\Instagram;
                     <el-button :type="instagram_auth_type" :disabled="instagram_auth" :loading="instagram_auth_loading" @click="instagram_auth_handle"><?php _e('Authenticate', 'store-picture') ?></el-button>
                     <el-button v-if="form.instagram_access_token.access_token" type="danger" @click="instagram_remove_token_handle"><?php _e('Remove Token', 'store-picture') ?></el-button>
                   </el-form-item>
-                  <p>Note: Login to Instagram (if you haven't already) and go to <a href="http://instagram.com/developer" target="_blank">http://instagram.com/developer</a>. Click on "Manage Clients" in top right corner. Enter data in form as shown below (instead of example.com , put actual URL of your site). Click on "Register" and copy your "Client ID" and "Client Secret"</p>
+                  <p>Note: Login to Instagram (if you haven't already) and go to <a href="http://instagram.com/developer" target="_blank">http://instagram.com/developer</a>. Click on "Manage Clients" in top right corner. Enter data in form as shown below (instead of example.com , put actual URL of your site). Click on "Register" and copy your "Client ID" and "Client Secret" (<i class="dashicons dashicons-video-alt3"></i> <a href="https://www.youtube.com/watch?v=2p_oK-w8Cx8" target="_blank"><u>Watch Video</u></a>)</p>                
                 </div>
               </li>
 							<!-- firebase -->

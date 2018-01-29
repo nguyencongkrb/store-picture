@@ -36,10 +36,13 @@ if(! class_exists('StorePictureScssHepler') && class_exists('scssc')) :
       // $content_scss = file_get_contents($scss_import_path . '/' . $main_file);
       $content_scss = apply_filters( 'store-picture-scss-hook', file_get_contents($scss_import_path . '/' . $main_file) );
 
-			$settings = StorePictureHelper::get_settings();
+      $settings = StorePictureHelper::get_settings();
+      $main_color     = empty( $settings['main_color'] )    ? 'rgba(110, 109, 246, 1)'  : $settings['main_color'];
+      $second_color   = empty( $settings['second_color'] )  ? 'rgba(0, 252, 224, 1)'    : $settings['second_color'];
+
 			$variables = array(
-				'$main_color		: '. $settings['main_color'],
-				'$second_color	: '. $settings['second_color'],
+				'$main_color		: '. $main_color,
+				'$second_color	: '. $second_color,
 			);
 
       $content_css = $scss->compile(implode('; ', array(
